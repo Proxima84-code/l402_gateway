@@ -4,7 +4,7 @@ defmodule L402Gateway.Application do
   @impl true
   def start(_type, _args) do
     children = [
-      {Finch, name: L402Gateway.Finch},
+      L402Gateway.TokenStore,
       {Bandit, plug: L402Gateway.Router, port: 4002}
     ]
 

@@ -22,8 +22,11 @@ defmodule L402Gateway.MixProject do
     [
       {:bandit, "~> 1.5"},
       {:plug, "~> 1.16"},
+      {:jason, "~> 1.4"}      ,
       {:req, "~> 0.5.0"},
-      {:jason, "~> 1.4"}
-    ]
+      {:floki, "~> 0.36"},
+      {:postgrex, "~> 0.19"}
+ 
+]
   end
 end

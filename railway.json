@@ -1,8 +1,7 @@
 {
   "$schema": "https://railway.com/railway.schema.json",
   "build": {
-    "builder": "DOCKERFILE",
-    "dockerfilePath": "/Dockerfile",
+    "builder": "RAILPACK",
     "buildEnvironment": "V3"
   },
   "deploy": {
@@ -10,7 +9,7 @@
     "numReplicas": 1,
     "sleepApplication": false,
     "useLegacyStacker": false,
-    "ipv6EgressEnabled": false,
+    "ipv6EgressEnabled": true,
     "multiRegionConfig": {
       "europe-west4-drams3a": {
         "numReplicas": 1
